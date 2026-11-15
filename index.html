@@ -1077,7 +1077,7 @@ function renderAnalysis(){
 function renderDecoder(a, pane){
   const d = a.decoder || {};
   pane.append(el("div",{class:"card"}, sec("①","2분 설명","이 회사를 한 문장으로"), P(d.drill,"drill")));
-  if (d.flow){ const c = el("div",{class:"card"}, sec("②","돈 버는 구조","노란 화살표 = 들어오는 돈, 파란 화살표 = 나가는 돈")); c.append(flowDiagram(d.flow)); if (d.flow.note) c.append(P(d.flow.note,"small muted")); pane.append(c); }
+  if (d.flow){ const c = el("div",{class:"card"}, sec("②","돈 버는 구조","검은 화살표 = 들어오는 돈, 파란 화살표 = 나가는 돈")); c.append(flowDiagram(d.flow)); if (d.flow.note) c.append(P(d.flow.note,"small muted")); pane.append(c); }
   const two = el("div",{class:"grid g2"});
   if (d.segments){
     const s = d.segments, c = el("div",{class:"card"}, sec("③","어디서 버나 · 사업별", s.period));
