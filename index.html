@@ -1712,7 +1712,7 @@ async function bootStatic(){
   watchDoc("lesson/today","lessonDoc",()=>{ renderLearn(); renderMarket(); });
 }
 /* ---------- 방문 통계 (운영자만 보는 GoatCounter 대시보드). 코드가 비어 있으면 아무것도 보내지 않아요 */
-const GC_CODE = "";
+const GC_CODE = "gaeminote";
 let GC_READY = false;
 function initStats(){
   if (!GC_CODE || GC_READY) return;
